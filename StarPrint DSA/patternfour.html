@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Four</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-size: 60px;
+            color: red;
+            line-height: 95%;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        let x = 9;
+        for (let i = 0; i < 6; i++) {
+            for (let k = 0; k < i; k++) {
+                document.write('&nbsp;&nbsp;')
+                
+            }
+            
+            for (let j = 0; j < x; j++) {
+                document.write('*')
+            }
+            document.write('<br>')
+            x = x-2;
+            
+            
+            
+        }
+    </script>
+    
+</body>
+</html>

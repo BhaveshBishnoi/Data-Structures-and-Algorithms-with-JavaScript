@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push Pop Function</title>
+</head>
+<body>
+    <p>Old Array: [20,46,37,83,95,74,64,62]</p> <br>
+    <p>New Array: [<p id="arrr"></p>]</p>
+    <input type="text" min="1" max="100" id="input" onchange="">
+    <br> <br>
+    <button onclick="push(val)">Add Value</button>
+    <br><br>
+    <button onclick="pop()">Remove Last Value</button>
+
+    <script>
+        let val = document.getElementById('input');
+        val = val.value;
+        let para = document.getElementById('arrr');
+        let arr = [20,46,37,83,95,74,64,62]
+let len = arr.length;
+
+function push(ele){
+    arr[len]=ele;
+    len++;
+    para.innerText = arr;
+}
+funct
+
+
+
+function pop() {
+    if(len>0){
+        len = len-1
+        arr.length = len
+        para.innerText = arr;
+
+    }else{
+        alert('Array is already Empty')
+    }
+}
+
+
+    </script>
+</body>
+</html>
